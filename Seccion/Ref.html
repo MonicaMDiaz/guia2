@@ -52,6 +52,17 @@
       font-family: Mongolian Baiti;
       font-size: 18px;
     }
+    label {
+      margin-right: 30px;
+      color: rgb(24, 166, 19);
+      text-align: left;
+      font-family: Imprint MT Shadow;
+      font-weight: bold;
+      font-size: 25px;
+    }
+    input[type="radio"]:checked {
+      accent-color: rgb(137, 14, 231);
+    }
   </style>
   <body>
     <nav class="navbar navbar-expand navbar-light bg-light">
@@ -102,15 +113,39 @@
                   style="border: 3px solid rgb(118, 84, 71)"
                 >
                   <br />
-                  <h1>Referencias laborales</h1>
+                  <form action="Ref.html" method="get">
+                    <input
+                      type="radio"
+                      id="reflab"
+                      value="rlab"
+                      name="Referencias"
+                    />
+                    <label for="rlab">Referencias laborales </label>
+                    <input
+                      type="radio"
+                      id="refaca"
+                      value="raca"
+                      name="Referencias"
+                    />
+                    <label for="raca">Referencias académicas</label>
+                    <input
+                      type="radio"
+                      id="refper"
+                      value="rper"
+                      name="Referencias"
+                    />
+                    <label for="rper">Referencias personales</label><br />
+                  </form>
                   <tr>
                     <th>Nombre:</th>
-                    <td colspan="2">Edith Gimena Solarte Acosta</td>
+                    <td colspan="2">
+                      <input type="text" placeholder="Nombres y apellidos" />
+                    </td>
                   </tr>
                   <tr>
                     <th>Cargo:</th>
-                    <td>Administrador público</td>
-                    <td>Concejal</td>
+                    <td><input type="text" /></td>
+                    <td><input type="text" /></td>
                   </tr>
                 </table>
                 <table
@@ -120,49 +155,14 @@
                 >
                   <tr>
                     <th>Nombre:</th>
-                    <td>María Elizabeth Riascos Acosta</td>
+                    <td colspan="2">
+                      <input type="text" placeholder="Nombres y apellidos" />
+                    </td>
                   </tr>
                   <tr>
                     <th>Cargo:</th>
-                    <td>Especialista en alta gerencia</td>
-                  </tr>
-                </table>
-                <br />
-                <table
-                  width="100%"
-                  bgcolor="#EACEFD"
-                  style="border: 3px solid rgb(118, 84, 71)"
-                >
-                  <br />
-                  <h1>Referencias académicas</h1>
-                  <tr>
-                    <th>Nombre:</th>
-                    <td colspan="4">Dagoberto Mayorca Torres</td>
-                  </tr>
-                  <tr>
-                    <th>Cargo:</th>
-                    <td>Ingeniero Físico</td>
-                    <td>Especialista en Gerencia de Proyectos</td>
-                    <td>Magíster en Ingeniería Computacional</td>
-                    <td>Docente universitario</td>
-                  </tr>
-                </table>
-                <table
-                  width="100%"
-                  bgcolor="#EACEFD"
-                  style="border: 3px solid rgb(118, 84, 71)"
-                >
-                  <tr>
-                    <th>Nombre:</th>
-                    <td colspan="5">Margarita Moncayo Torres</td>
-                  </tr>
-                  <tr>
-                    <th>Cargo:</th>
-                    <td>Ingeniera en Automática Industrial</td>
-                    <td>Magíster en Sistemas Mecatrónicos</td>
-                    <td>Doctora en Sistemas Mecatrónicos</td>
-                    <td>Directora de programa</td>
-                    <td>Docente universitario</td>
+                    <td><input type="text" /></td>
+                    <td><input type="text" /></td>
                   </tr>
                 </table>
                 <br />
@@ -172,14 +172,40 @@
                   style="border: 3px solid rgb(118, 84, 71)"
                 >
                   <br />
-                  <h1>Referencias personales</h1>
+                  <form action="Ref.html" method="get">
+                    <input
+                      type="radio"
+                      id="reflab"
+                      value="rlab"
+                      name="Referencias"
+                    />
+                    <label for="rlab">Referencias laborales </label>
+                    <input
+                      type="radio"
+                      id="refaca"
+                      value="raca"
+                      name="Referencias"
+                    />
+                    <label for="raca">Referencias académicas</label>
+                    <input
+                      type="radio"
+                      id="refper"
+                      value="rper"
+                      name="Referencias"
+                    />
+                    <label for="rper">Referencias personales</label><br />
+                  </form>
                   <tr>
                     <th>Nombre:</th>
-                    <td>Mario Alejandro Paz Arteaga</td>
+                    <td colspan="2">
+                      <input type="text" placeholder="Nombres y apellidos" />
+                    </td>
                   </tr>
                   <tr>
                     <th>Cargo:</th>
-                    <td>Contador Público</td>
+                    <td><input type="text" /></td>
+                    <td><input type="text" /></td>
+                    <td><input type="text" /></td>
                   </tr>
                 </table>
                 <table
@@ -189,11 +215,56 @@
                 >
                   <tr>
                     <th>Nombre:</th>
-                    <td>Claudia Calvache Pantoja</td>
+                    <td colspan="2">
+                      <input type="text" placeholder="Nombres y apellidos" />
+                    </td>
                   </tr>
                   <tr>
                     <th>Cargo:</th>
-                    <td>Ingeniera agroforestal</td>
+                    <td><input type="text" /></td>
+                    <td><input type="text" /></td>
+                    <td><input type="text" /></td>
+                  </tr>
+                </table>
+                <br />
+                <table
+                  width="100%"
+                  bgcolor="#EACEFD"
+                  style="border: 3px solid rgb(118, 84, 71)"
+                >
+                  <br />
+                  <form action="Ref.html" method="get">
+                    <input
+                      type="radio"
+                      id="reflab"
+                      value="rlab"
+                      name="Referencias"
+                    />
+                    <label for="rlab">Referencias laborales </label>
+                    <input
+                      type="radio"
+                      id="refaca"
+                      value="raca"
+                      name="Referencias"
+                    />
+                    <label for="raca">Referencias académicas</label>
+                    <input
+                      type="radio"
+                      id="refper"
+                      value="rper"
+                      name="Referencias"
+                    />
+                    <label for="rper">Referencias personales</label><br />
+                  </form>
+                  <tr>
+                    <th>Nombre:</th>
+                    <td colspan="2">
+                      <input type="text" placeholder="Nombres y apellidos" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Cargo:</th>
+                    <td><input type="text" /></td>
                   </tr>
                 </table>
                 <table
@@ -203,11 +274,13 @@
                 >
                   <tr>
                     <th>Nombre:</th>
-                    <td>David Alejandro Arteaga Medina</td>
+                    <td colspan="2">
+                      <input type="text" placeholder="Nombres y apellidos" />
+                    </td>
                   </tr>
                   <tr>
                     <th>Cargo:</th>
-                    <td>Fotógrafo</td>
+                    <td><input type="text" /></td>
                   </tr>
                 </table>
               </div>

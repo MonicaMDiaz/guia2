@@ -24,18 +24,16 @@
 
     h1 {
       color: black;
-      text-align: left;
-      font-family: Imprint MT Shadow;
       font-weight: bold;
-      font-size: 50px;
+      font-family: Mongolian Baiti;
+      font-size: 18px;
     }
 
     h2 {
-      color: rgb(137, 14, 231);
+      color: rgb(113, 16, 187);
       text-align: left;
       font-family: Mongolian Baiti;
-      font-weight: bold;
-      font-size: 30px;
+      font-size: 18px;
     }
 
     h3 {
@@ -58,6 +56,11 @@
       text-align: left;
       font-family: Mongolian Baiti;
       font-size: 18px;
+    }
+    label {
+      font-family: Mongolian Baiti;
+      font-size: 18px;
+      font-weight: bold;
     }
   </style>
   <body>
@@ -100,74 +103,202 @@
       <div class="row">
         <div class="col-12">
           <div class="row">
-            <div class="col-1"></div>
-            <div class="col-10">
+            <div class="col-6">
+              <br />
+              <form method="get" action="Inicio.html">
+                <label for="fname">Lugar:</label>
+                <input type="text" id="vip" name="vip" /><br />
+                <label for="lname">Cargo:</label>
+                <input type="text" id="Cargo1" name="Cargo1" /><br />
+                <label for="titulo">Cargo:</label>
+                <input type="text" id="Cargo2" name="Cargo2" /><br />
+              </form>
+              <br />
+              <form action="Empleos.html" method="get">
+                <label for="fname">Lugar:</label>
+                <input type="text" id="avante" name="avante" /><br />
+                <label for="lname">Cargo:</label>
+                <input type="text" id="Cargo" name="Cargo" /><br />
+              </form>
+              <br />
+              <form action="Empleos.html" method="get">
+                <label for="fname">Lugar:</label>
+                <input type="text" id="Kids" name="Kids" /><br />
+                <label for="lname">Cargo:</label>
+                <input type="text" id="Cargo3" name="Cargo3" /><br />
+                <label for="lname">Cargo:</label>
+                <input type="text" id="Cargo4" name="Cargo4" /><br />
+                <label for="lname">Cargo:</label>
+                <input type="text" id="Cargo5" name="Cargo5" /><br />
+              </form>
+              <br />
+              <form action="Empleos.html" method="get">
+                <label for="fname">Lugar:</label>
+                <input type="text" id="locura" name="locura" /><br />
+                <label for="lname">Cargo:</label>
+                <input type="text" id="Cargo6" name="Cargo6" /><br />
+                <label for="lname">Cargo:</label>
+                <input type="text" id="Cargo7" name="Cargo7" /><br />
+              </form>
+              <br />
+              <form action="Empleos.html" method="get">
+                <label for="fname">Lugar:</label>
+                <input type="text" id="Variedades" name="Variedades" /><br />
+                <label for="lname">Cargo:</label>
+                <input type="text" id="Cargo8" name="Cargo8" /><br />
+                <label for="lname">Cargo:</label>
+                <input type="text" id="Cargo9" name="Cargo9" /><br />
+                <label for="lname">Cargo:</label>
+                <input type="text" id="Cargo10" name="Cargo10" /><br />
+                <label for="lname">Cargo:</label>
+                <input type="text" id="Cargo11" name="Cargo11" /><br />
+              </form>
+              <br />
+            </div>
+            <div class="col-6">
               <br />
               <table width="100%" bgcolor="#D0FDCE" style="border-radius: 10px">
-                <th style="text-align: center">Zona V.I.P. Linares</th>
+                <th style="text-align: center">
+                  <h1 id="lvip"></h1>
+                </th>
               </table>
               <ul>
-                <li>Programacion de luces led con efectos especiales</li>
-                <li>Instalación de luces led decorativas</li>
+                <li id="lCargo1"></li>
+                <li id="lCargo2"></li>
               </ul>
               <br />
               <table width="100%" bgcolor="#D0FDCE" style="border-radius: 10px">
                 <th style="text-align: center">
-                  Avante - Centro de control de movilidad
+                  <h1 id="lavante"></h1>
                 </th>
               </table>
               <ul>
-                <li>Practica profesional</li>
+                <li id="lCargo"></li>
               </ul>
               <br />
               <table width="100%" bgcolor="#D0FDCE" style="border-radius: 10px">
-                <th style="text-align: center">Zona Kids Linares</th>
+                <th style="text-align: center"><h1 id="lKids"></h1></th>
               </table>
               <ul>
-                <li>Mesera</li>
-                <li>Atención y supervición de infantes</li>
-                <li>Gestión y registro de transacciones en area de caja</li>
+                <li id="lCargo3"></li>
+                <li id="lCargo4"></li>
+                <li id="lCargo5"></li>
               </ul>
               <br />
               <table width="100%" bgcolor="#D0FDCE" style="border-radius: 10px">
-                <th style="text-align: center">
-                  Cacharrería "La locura" Linares
-                </th>
+                <th style="text-align: center"><h1 id="llocura"></h1></th>
               </table>
               <ul>
-                <li>Administradora</li>
-                <li>Asersor en ventas</li>
+                <li id="lCargo6"></li>
+                <li id="lCargo7"></li>
               </ul>
               <br />
               <table width="100%" bgcolor="#D0FDCE" style="border-radius: 10px">
-                <th style="text-align: center">Variedades Linares</th>
+                <th style="text-align: center"><h1 id="lVariedades"></h1></th>
               </table>
               <ul>
-                <li>Confección de anchetas</li>
-                <li>Atención corresponsal bancario</li>
-                <li>Gestión de transacciones efecty</li>
-                <li>Asersor en ventas</li>
-              </ul>
-              <br />
-              <table width="100%" bgcolor="#D0FDCE" style="border-radius: 10px">
-                <th style="text-align: center">Emisora "Maxima FM" Linares</th>
-              </table>
-              <ul>
-                <li>Secretaria</li>
-                <li>Locutora</li>
-              </ul>
-              <br />
-              <table width="100%" bgcolor="#D0FDCE" style="border-radius: 10px">
-                <th style="text-align: center">Independiente</th>
-              </table>
-              <ul>
-                <li>Tutora y supervisora de infantes</li>
-                <li>Asesora de ventas por catalogo</li>
-                <li>Gestión y registro de transacciones en area de caja</li>
+                <li id="lCargo8"></li>
+                <li id="lCargo9"></li>
+                <li id="lCargo10"></li>
+                <li id="lCargo11"></li>
               </ul>
               <br />
             </div>
-            <div class="col-1"></div>
+            <script>
+              const vipInput = document.getElementById("vip");
+              const Cargo1Input = document.getElementById("Cargo1");
+              const Cargo2Input = document.getElementById("Cargo2");
+              const lvipHeader = document.getElementById("lvip");
+              const lCargo1Header = document.getElementById("lCargo1");
+              const lCargo2Header = document.getElementById("lCargo2");
+              vipInput.addEventListener("input", actualizarHeaders);
+              Cargo1Input.addEventListener("input", actualizarHeaders);
+              Cargo2Input.addEventListener("input", actualizarHeaders);
+
+              const avanteInput = document.getElementById("avante");
+              const CargoInput = document.getElementById("Cargo");
+              const lavanteHeader = document.getElementById("lavante");
+              const lCargoHeader = document.getElementById("lCargo");
+              avanteInput.addEventListener("input", actualizarHeaders);
+              CargoInput.addEventListener("input", actualizarHeaders);
+
+              const KidsInput = document.getElementById("Kids");
+              const Cargo3Input = document.getElementById("Cargo3");
+              const Cargo4Input = document.getElementById("Cargo4");
+              const Cargo5Input = document.getElementById("Cargo5");
+              const lKidsHeader = document.getElementById("lKids");
+              const lCargo3Header = document.getElementById("lCargo3");
+              const lCargo4Header = document.getElementById("lCargo4");
+              const lCargo5Header = document.getElementById("lCargo5");
+              KidsInput.addEventListener("input", actualizarHeaders);
+              Cargo3Input.addEventListener("input", actualizarHeaders);
+              Cargo4Input.addEventListener("input", actualizarHeaders);
+              Cargo5Input.addEventListener("input", actualizarHeaders);
+
+              const locuraInput = document.getElementById("locura");
+              const Cargo6Input = document.getElementById("Cargo6");
+              const Cargo7Input = document.getElementById("Cargo7");
+              const llocuraHeader = document.getElementById("llocura");
+              const lCargo6Header = document.getElementById("lCargo6");
+              const lCargo7Header = document.getElementById("lCargo7");
+              locuraInput.addEventListener("input", actualizarHeaders);
+              Cargo6Input.addEventListener("input", actualizarHeaders);
+              Cargo7Input.addEventListener("input", actualizarHeaders);
+
+              const VariedadesInput = document.getElementById("Variedades");
+              const Cargo8Input = document.getElementById("Cargo8");
+              const Cargo9Input = document.getElementById("Cargo9");
+              const Cargo10Input = document.getElementById("Cargo10");
+              const Cargo11Input = document.getElementById("Cargo11");
+              const lVariedadesHeader = document.getElementById("lVariedades");
+              const lCargo8Header = document.getElementById("lCargo8");
+              const lCargo9Header = document.getElementById("lCargo9");
+              const lCargo10Header = document.getElementById("lCargo10");
+              const lCargo11Header = document.getElementById("lCargo11");
+              VariedadesInput.addEventListener("input", actualizarHeaders);
+              Cargo8Input.addEventListener("input", actualizarHeaders);
+              Cargo9Input.addEventListener("input", actualizarHeaders);
+              Cargo10Input.addEventListener("input", actualizarHeaders);
+              Cargo11Input.addEventListener("input", actualizarHeaders);
+
+              function actualizarHeaders() {
+                const vip = vipInput.value;
+                const Cargo1 = Cargo1Input.value;
+                const Cargo2 = Cargo2Input.value;
+                const avante = avanteInput.value;
+                const Cargo = CargoInput.value;
+                const Kids = KidsInput.value;
+                const Cargo3 = Cargo3Input.value;
+                const Cargo4 = Cargo4Input.value;
+                const Cargo5 = Cargo5Input.value;
+                const locura = locuraInput.value;
+                const Cargo6 = Cargo6Input.value;
+                const Cargo7 = Cargo7Input.value;
+                const Variedades = VariedadesInput.value;
+                const Cargo8 = Cargo8Input.value;
+                const Cargo9 = Cargo9Input.value;
+                const Cargo10 = Cargo10Input.value;
+                const Cargo11 = Cargo11Input.value;
+
+                lvipHeader.textContent = `${vip}`;
+                lCargo1Header.textContent = Cargo1;
+                lCargo2Header.textContent = Cargo2;
+                lavanteHeader.textContent = `${avante}`;
+                lCargoHeader.textContent = Cargo;
+                lKidsHeader.textContent = `${Kids}`;
+                lCargo3Header.textContent = Cargo3;
+                lCargo4Header.textContent = Cargo4;
+                lCargo5Header.textContent = Cargo5;
+                llocuraHeader.textContent = `${locura}`;
+                lCargo6Header.textContent = Cargo6;
+                lCargo7Header.textContent = Cargo7;
+                lVariedadesHeader.textContent = `${Variedades}`;
+                lCargo8Header.textContent = Cargo8;
+                lCargo9Header.textContent = Cargo9;
+                lCargo10Header.textContent = Cargo10;
+                lCargo11Header.textContent = Cargo11;
+              }
+            </script>
           </div>
         </div>
       </div>

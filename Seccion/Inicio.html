@@ -45,9 +45,14 @@
       font-weight: bold;
       font-size: 25px;
     }
-    td {
+    textarea {
       font-family: Mongolian Baiti;
       font-size: 18px;
+    }
+    label {
+      font-family: Mongolian Baiti;
+      font-size: 18px;
+      font-weight: bold;
     }
   </style>
   <body>
@@ -94,66 +99,59 @@
             <div class="row">
               <div class="col-md-3"></div>
               <div class="col-md-2">
-                <div style="display: flex; justify-content: space-between">
-                  <img
-                    src="/images/foto.jpg"
-                    alt="Foto perfil"
-                    style="
-                      display: flex;
-                      justify-content: center;
-                      align-items: center;
-                      width: 260px;
-                      height: 260px;
-                      border-radius: 50%;
-                      border: 5px solid rgb(118, 84, 71);
-                    "
-                  />
-                </div>
-              </div>
-              <div class="col-md-4">
-                <br />
-                <br />
-                <br />
-                <h1>Mónica Diaz</h1>
-                <h2>Ingeniera mecatrónica</h2>
-              </div>
-              <div class="col-md-2"></div>
-              <div class="col-md-2"></div>
+                <form method="get" action="Inicio.html">
+                    <label for="fname">Nombre:</label><br />
+                    <input type="text" id="nombre" name="nombre" /><br />
+                    <label for="lname">Apellido:</label><br />
+                    <input type="text" id="apellido" name="apellido" /><br />
+                    <label for="titulo">Titulo profesional:</label><br />
+                    <input type="text" id="titulo" name="titulo" /><br />
+                </form>
             </div>
-            <div class="col-1"></div>
-            <div class="col-10">
-              <br />
-              <table width="100%" bgcolor="#EACEFD" style="border-radius: 10px">
-                <h3>Sobre mi</h3>
-                <td>
-                  Soy una ingeniera mecatrónica con sólidas habilidades en
-                  programación, electrónica y disciplinas afines. Mi enfoque es
-                  decidido y mi mente ingeniosa me permite abordar desafíos con
-                  creatividad. Me considero una persona de confianza, respetuosa
-                  y ética, valorando la honestidad en todas mis interacciones.
-                  Mi actitud es positiva y siempre estoy ansiosa por adquirir
-                  nuevos conocimientos y superar desafíos.
-                </td>
-              </table>
-              <br />
-              <table width="100%" bgcolor="#EACEFD" style="border-radius: 10px">
-                <h3>Habilidades</h3>
-                <td>
-                  Creo firmemente que mi conjunto de habilidades en
-                  comunicación, liderazgo y creatividad me posiciona como una
-                  elección sólida y valiosa para cualquier equipo o proyecto. Mi
-                  capacidad de liderazgo se refleja en mi capacidad para motivar
-                  y guiar a otros hacia el logro de objetivos comunes, así como
-                  en mi habilidad para tomar decisiones informadas y asumir la
-                  responsabilidad cuando es necesario. Además, mi enfoque en la
-                  creatividad me impulsa a abordar los desafíos desde
-                  perspectivas innovadoras, lo que a menudo resulta en
-                  soluciones frescas y efectivas.
-                </td>
-              </table>
-              <br />
+            <div class="col-md-4">
+                <br />
+                <br />
+                <br />
+                <h1 id="nombreApellido"></h1>
+                <h2 id="tituloProfesional"></h2>
             </div>
-            <div class="col-1"></div>
+            <script>
+              const nombreInput = document.getElementById('nombre');
+              const apellidoInput = document.getElementById('apellido');
+              const tituloInput = document.getElementById('titulo');
+              const nombreApellidoHeader = document.getElementById('nombreApellido');
+              const tituloProfesionalHeader = document.getElementById('tituloProfesional');
+          
+              nombreInput.addEventListener('input', actualizarHeaders);
+              apellidoInput.addEventListener('input', actualizarHeaders);
+              tituloInput.addEventListener('input', actualizarHeaders);
+          
+              function actualizarHeaders() {
+                  const nombre = nombreInput.value;
+                  const apellido = apellidoInput.value;
+                  const titulo = tituloInput.value;
+          
+                  nombreApellidoHeader.textContent = `${nombre} ${apellido}`;
+                  tituloProfesionalHeader.textContent = titulo;
+              }
+            </script>
+          <div class="col-1"></div>
+          <div class="col-10">
+            <br />
+            <table width="100%" bgcolor="#EACEFD" style="border-radius: 10px">
+              <h3>Sobre mi</h3>
+              <textarea type="text" style="height: 100px; width: 100%; background-color:#EACEFD;"
+                    value="" placeholder="Cómo me considero, pasatiempos, fortalezas, etc."></textarea>
+            </table>
+            <br />
+            <table width="100%" bgcolor="#EACEFD" style="border-radius: 10px">
+              <h3>Habilidades</h3>
+              <textarea type="text" style="height: 100px; width: 100%; background-color:#EACEFD;"
+                    value="" placeholder="Mis mejores talentos"></textarea>
+            </table>
+            <br />
+          </div>
+          <div class="col-1"></div>
           </div>
         </div>
       </div>
@@ -172,3 +170,23 @@
     ></script>
   </body>
 </html>
+
+<!-- 
+Soy una ingeniera mecatrónica con sólidas habilidades en
+programación, electrónica y disciplinas afines. Mi enfoque es
+decidido y mi mente ingeniosa me permite abordar desafíos con
+creatividad. Me considero una persona de confianza, respetuosa
+y ética, valorando la honestidad en todas mis interacciones.
+Mi actitud es positiva y siempre estoy ansiosa por adquirir
+nuevos conocimientos y superar desafíos.
+
+Creo firmemente que mi conjunto de habilidades en
+comunicación, liderazgo y creatividad me posiciona como una
+elección sólida y valiosa para cualquier equipo o proyecto. Mi
+capacidad de liderazgo se refleja en mi capacidad para motivar
+y guiar a otros hacia el logro de objetivos comunes, así como
+en mi habilidad para tomar decisiones informadas y asumir la
+responsabilidad cuando es necesario. Además, mi enfoque en la
+creatividad me impulsa a abordar los desafíos desde
+perspectivas innovadoras, lo que a menudo resulta en
+soluciones frescas y efectivas.
